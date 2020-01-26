@@ -16,7 +16,7 @@ const Results = (props) => {
 	const getFlights = async (values) => {
 		let { data } = await fetchData(values)
 		setFlights(data)
-		setInputData(values) //me parece que esto desvirtúa un poco la función
+		setInputData(values) //me parece que esto desvirtúa un poco la función // qué cosa?
 		toggleLoading(false)
 	}
 

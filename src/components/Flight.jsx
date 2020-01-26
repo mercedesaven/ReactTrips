@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Modal from '../components/Modal'
 
+// quedó bastante incompleta y poco estructurada la página de resultados.
 const Flight = ({ data: { itineraries, price: { grandTotal, currency } } }) => {
 	
 	const [ isModalOpen, toggleModal ] = useState(false)

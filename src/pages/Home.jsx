@@ -28,6 +28,7 @@ const Home = () => {
 			<Header />
 
 		<div className={"formInput"}>
+				{/*El formulario deberia ser un componente aparte*/}
 				<Formik initialValues={form} onSubmit={(v) => getResults(v)}>
 					{(props) => (
 						<Form className={'form'}>
@@ -44,6 +45,7 @@ const Home = () => {
 				</Formik>
 
 			</div>
+			{/*Esta parte tambien especialmente por ser un contenido con estructura bastante repetitiva*/}			
 			<div className={'pageInfoExtract'}> 
 				<ul className={'pageInfo'}>
 					<li className={'extract'}>
